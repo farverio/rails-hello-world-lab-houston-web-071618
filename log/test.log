@@ -20,3 +20,88 @@
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
 Started GET "/hello_world" for 127.0.0.1 at 2015-11-25 12:24:22 -0600
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (72.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (79.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (57.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/hello_world" for 127.0.0.1 at 2018-08-09 20:22:07 -0500
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (93.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (79.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (58.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/hello_world" for 127.0.0.1 at 2018-08-09 20:26:58 -0500
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (94.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+Could not log "sql.active_record" event. Interrupt:  ["/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/instrumenter.rb:61:in `duration'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/log_subscriber.rb:45:in `sql'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/subscriber.rb:100:in `finish'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/log_subscriber.rb:83:in `finish'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/fanout.rb:102:in `finish'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/fanout.rb:46:in `block in finish'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/fanout.rb:46:in `each'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/fanout.rb:46:in `finish'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/instrumenter.rb:36:in `finish'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/notifications/instrumenter.rb:25:in `instrument'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract_adapter.rb:478:in `log'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/sqlite3_adapter.rb:281:in `exec_query'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/database_statements.rb:356:in `select'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/database_statements.rb:32:in `select_all'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/query_cache.rb:70:in `select_all'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/database_statements.rb:38:in `select_one'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/database_statements.rb:43:in `select_value'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/sqlite3_adapter.rb:595:in `sqlite_version'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/sqlite3_adapter.rb:138:in `supports_partial_index?'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/schema_statements.rb:945:in `add_index_options'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/schema_statements.rb:570:in `add_index'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/schema_migration.rb:32:in `create_table'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/connection_adapters/abstract/schema_statements.rb:836:in `initialize_schema_migrations_table'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/migration.rb:665:in `block in method_missing'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/migration.rb:634:in `block in say_with_time'", "/home/stephen/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/benchmark.rb:293:in `measure'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/migration.rb:634:in `say_with_time'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/migration.rb:654:in `method_missing'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/schema.rb:44:in `define'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/schema.rb:61:in `define'", "/home/stephen/rails-hello-world-lab-houston-web-071618/db/schema.rb:14:in `<top (required)>'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:268:in `load'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:268:in `block in load'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:240:in `load_dependency'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:268:in `load'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/tasks/database_tasks.rb:221:in `load_schema_for'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/railties/databases.rake:315:in `block (3 levels) in <top (required)>'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `block in execute'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `each'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `execute'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:213:in `block in invoke_with_call_chain'", "/home/stephen/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:193:in `invoke_with_call_chain'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:182:in `invoke'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/railties/databases.rake:304:in `block (3 levels) in <top (required)>'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `block in execute'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `each'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `execute'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:213:in `block in invoke_with_call_chain'", "/home/stephen/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:193:in `invoke_with_call_chain'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:182:in `invoke'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activerecord-4.2.10/lib/active_record/railties/databases.rake:352:in `block (3 levels) in <top (required)>'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `block in execute'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `each'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271:in `execute'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:213:in `block in invoke_with_call_chain'", "/home/stephen/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:193:in `invoke_with_call_chain'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:182:in `invoke'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:160:in `invoke_task'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:116:in `block (2 levels) in top_level'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:116:in `each'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:116:in `block in top_level'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:125:in `run_with_threads'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:110:in `top_level'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:83:in `block in run'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:186:in `standard_exception_handling'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/application.rb:80:in `run'", "/home/stephen/rails-hello-world-lab-houston-web-071618/bin/rake:8:in `<top (required)>'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:268:in `load'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:268:in `block in load'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:240:in `load_dependency'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/activesupport-4.2.10/lib/active_support/dependencies.rb:268:in `load'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:40:in `call'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'", "/home/stephen/.rvm/gems/ruby-2.5.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'", "/home/stephen/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `require'", "/home/stephen/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0/rubygems/core_ext/kernel_require.rb:59:in `require'", "-e:1:in `<main>'"]
+  [1m[35m (78.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (61.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (290.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (79.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (65.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/hello_world" for 127.0.0.1 at 2018-08-09 20:27:42 -0500
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (281.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (81.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (59.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/hello_world" for 127.0.0.1 at 2018-08-09 20:28:25 -0500
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (286.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (82.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (57.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/hello_world" for 127.0.0.1 at 2018-08-09 20:28:46 -0500
+Processing by StaticController#hello_world as HTML
+  Rendered static/hello_world (0.8ms)
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (86.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (76.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (66.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/hello_world" for 127.0.0.1 at 2018-08-09 20:29:03 -0500
+Processing by StaticController#hello_world as HTML
+  Rendered static/hello_world (0.8ms)
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
